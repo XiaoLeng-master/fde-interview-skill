@@ -1,0 +1,156 @@
+{
+  "skill_name": "fde-interview",
+  "suite": "trigger",
+  "cases": [
+    {
+      "id": "trigger-01",
+      "category": "positive",
+      "prompt": "我做了 5 年 Java 后端，想在一个月内投国内 AI FDE，帮我判断差距并安排路线。",
+      "expected_trigger": "readiness_diagnosis",
+      "assertions": [
+        "进入准备度诊断，而不是直接开始模拟面试",
+        "不因没有 FDE title 否定可迁移工程经验"
+      ]
+    },
+    {
+      "id": "trigger-02",
+      "category": "positive",
+      "prompt": "根据我的脱敏简历，诊断我是否适合投递 Forward Deployed AI Engineer。",
+      "expected_trigger": "resume_audit",
+      "assertions": [
+        "进入简历诊断与改写模式",
+        "先审计事实和证据缺口"
+      ]
+    },
+    {
+      "id": "trigger-03",
+      "category": "positive",
+      "prompt": "请现在模拟面试我，目标是国内制造业 FDE。",
+      "expected_trigger": "mock_interview",
+      "assertions": [
+        "直接开始模拟面试",
+        "第一轮只问一个问题"
+      ]
+    },
+    {
+      "id": "trigger-04",
+      "category": "positive",
+      "prompt": "给我一个医院客服知识助手的 FDE Case Drill，我来提问，你别提前给方案。",
+      "expected_trigger": "case_drill",
+      "assertions": [
+        "进入 Case Drill",
+        "只给初始 brief，不预先泄露隐藏证据"
+      ]
+    },
+    {
+      "id": "trigger-05",
+      "category": "positive",
+      "prompt": "I am targeting a senior global Forward Deployed AI Engineer role. Interview me in English.",
+      "expected_trigger": "mock_interview",
+      "assertions": [
+        "进入英文模拟面试",
+        "题目包含客户和生产约束"
+      ]
+    },
+    {
+      "id": "trigger-06",
+      "category": "positive",
+      "prompt": "我想转 FDE，也想把简历改好，先帮我看我现在到底差什么。",
+      "expected_trigger": "readiness_diagnosis",
+      "assertions": [
+        "按诊断优先于简历的默认顺序处理",
+        "说明后续可进入简历诊断"
+      ]
+    },
+    {
+      "id": "trigger-07",
+      "category": "positive",
+      "prompt": "把这段项目经历改成 FDE 简历 bullet，并列出每条会被追问的证据。",
+      "expected_trigger": "resume_audit",
+      "assertions": [
+        "进入简历诊断与改写模式",
+        "提供证据或待确认项，而非只润色措辞"
+      ]
+    },
+    {
+      "id": "trigger-08",
+      "category": "positive",
+      "prompt": "客户说要做一个设备维修 Agent。请作为面试官给我一个 case。",
+      "expected_trigger": "case_drill",
+      "assertions": [
+        "把模糊客户需求视为 Case Drill",
+        "要求先做 discovery 后谈架构"
+      ]
+    },
+    {
+      "id": "trigger-09",
+      "category": "negative",
+      "prompt": "解释一下 RAG 和 Agent 的区别。",
+      "expected_trigger": "clarify",
+      "assertions": [
+        "不把普通技术解释误路由为四种 FDE 服务模式",
+        "简短确认用户是否希望将问题放入 FDE 准备或案例语境"
+      ]
+    },
+    {
+      "id": "trigger-10",
+      "category": "negative",
+      "prompt": "帮我写一个 Python 快排。",
+      "expected_trigger": "clarify",
+      "assertions": [
+        "不声称这是 FDE 面试诊断或 Case Drill",
+        "不虚构与 FDE 岗位的关联"
+      ]
+    },
+    {
+      "id": "trigger-11",
+      "category": "negative",
+      "prompt": "我的老板让我明天做一份销售周报。",
+      "expected_trigger": "clarify",
+      "assertions": [
+        "不自动假定是 FDE 求职需求",
+        "不启动评分或模拟面试"
+      ]
+    },
+    {
+      "id": "trigger-12",
+      "category": "boundary",
+      "prompt": "我只有一个 JD，想知道是否值得投递；没有简历也没有项目材料。",
+      "expected_trigger": "readiness_diagnosis",
+      "assertions": [
+        "可基于 JD 进入准备度诊断",
+        "明确候选人证据不足并避免精确评分"
+      ]
+    },
+    {
+      "id": "trigger-13",
+      "category": "boundary",
+      "prompt": "我想模拟面试，但你先根据这份 JD 判断更该考 coding、debugging 还是 system design。",
+      "expected_trigger": "mock_interview",
+      "assertions": [
+        "使用 JD 选择最匹配的技术环节",
+        "不在开始时泄露完整参考答案"
+      ]
+    },
+    {
+      "id": "trigger-14",
+      "category": "boundary",
+      "prompt": "我在实施团队做过知识库项目，能帮我准备一次面试吗？",
+      "expected_trigger": "clarify",
+      "assertions": [
+        "只追问一个会改变面试设计的关键问题，例如目标岗位或轨道",
+        "不假定项目已生产上线或由候选人主导"
+      ]
+    },
+    {
+      "id": "trigger-15",
+      "category": "boundary",
+      "prompt": "我要转 FDE，麻烦给我一个制造业现场需求，顺便结束后评估我。",
+      "expected_trigger": "case_drill",
+      "assertions": [
+        "先运行 Case Drill",
+        "在候选人结束或轮次完成后再给评估"
+      ]
+    }
+  ]
+}

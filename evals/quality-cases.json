@@ -1,0 +1,102 @@
+{
+  "skill_name": "fde-interview",
+  "suite": "quality",
+  "cases": [
+    {
+      "id": "quality-01",
+      "mode": "readiness_diagnosis",
+      "scenario_type": "technical",
+      "prompt": "我做了 4 年数据平台和 MLOps，参与过内部客服 RAG 上线。目标是 6 周后投国际平台型 FDE。请诊断准备度。",
+      "expected_output": "先给定位，再分开列出确认事实、可辩护推断与缺口；给通用分数区间和国际轨 Overlay；按影响和修复时间安排 6 周内可验收的补证产物。",
+      "assertions": [
+        "不把内部系统自动写成客户交付",
+        "明确生产、采用和复用证据是否已知",
+        "建议包含英文沟通、编码或系统设计等国际轨要求"
+      ]
+    },
+    {
+      "id": "quality-02",
+      "mode": "readiness_diagnosis",
+      "scenario_type": "nontechnical",
+      "prompt": "我是实施顾问，负责过客户培训和需求访谈，几乎不会写代码。三个月后想转国内 AI FDE。",
+      "expected_output": "认可发现和采用经验，同时清楚说明工程、集成与运行证据缺口；给出不夸大的准备度结论和以可验收产物为中心的路线。",
+      "assertions": [
+        "不把客户沟通经验等同于完整 FDE 闭环",
+        "不承诺三个月一定完成转岗",
+        "建议同时补齐技术交付和证据表达"
+      ]
+    },
+    {
+      "id": "quality-03",
+      "mode": "resume_audit",
+      "scenario_type": "technical",
+      "prompt": "改写这段：参与公司知识库项目，效果不错。团队把回答准确率从 70% 提到 88%，我负责检索链路的排障。",
+      "expected_output": "保留团队指标和个人责任边界，要求补充指标口径、用户、上线和验证信息；输出保守 bullet 并列出待确认项。",
+      "assertions": [
+        "不把团队指标改写为个人成果",
+        "不把排障写成全程 Owner",
+        "准确率缺少口径时标为待确认"
+      ]
+    },
+    {
+      "id": "quality-04",
+      "mode": "resume_audit",
+      "scenario_type": "nontechnical",
+      "prompt": "改写这段：为零售客户组织 AI 工具培训，收集了大量反馈，客户说很满意。",
+      "expected_output": "不制造技术实现责任或量化结果；将培训、反馈收集和采用证据分开，并提出最少必要的澄清问题。",
+      "assertions": [
+        "不虚构客户数量、满意度或业务收益",
+        "区分培训交付与系统生产化",
+        "给出可验证的保守版本"
+      ]
+    },
+    {
+      "id": "quality-05",
+      "mode": "mock_interview",
+      "scenario_type": "technical",
+      "prompt": "模拟高级 FDE 的系统设计面试：客户要把合同审查接入已有 CRM 和文档库。",
+      "expected_output": "从一个问题开始，逐步追问用户、工作流、集成、权限、评估、故障与运营；候选人回答前不公布评分和完整解法。",
+      "assertions": [
+        "每次只问一个问题",
+        "问题覆盖企业系统边界和人工兜底",
+        "不在面试进行中给完整参考答案"
+      ]
+    },
+    {
+      "id": "quality-06",
+      "mode": "mock_interview",
+      "scenario_type": "nontechnical",
+      "prompt": "模拟行为面试，重点考察我如何处理客户期望失控。",
+      "expected_output": "提出一个行为题并等待回答，再围绕谁、何时、约束、行动、验证与结果逐层追问；不凭自信直接给高分。",
+      "assertions": [
+        "第一轮仅提出一个问题",
+        "追问要求具体可核验事实",
+        "评分或完整反馈留到结束后"
+      ]
+    },
+    {
+      "id": "quality-07",
+      "mode": "case_drill",
+      "scenario_type": "technical",
+      "prompt": "开始一个跨国物流异常分拣的 FDE Case Drill。",
+      "expected_output": "初始阶段仅给业务 brief，不给架构、隐藏证据或评估；Discovery 阶段只随候选人的问题逐条释放系统、数据、权限、异常、基线和验收信息；结束阶段才要求候选人交付能运行的最小纵切片并进行评估。",
+      "assertions": [
+        "初始阶段：不先画完整架构，不泄露隐藏证据，也不开始最终评估",
+        "Discovery 阶段：仅根据候选人的问题逐条释放隐藏证据",
+        "结束阶段：要求包含 eval、发布、回滚和运营责任的方案后，才给最终评估"
+      ]
+    },
+    {
+      "id": "quality-08",
+      "mode": "case_drill",
+      "scenario_type": "nontechnical",
+      "prompt": "开始一个连锁门店店长抱怨排班混乱的 FDE Case Drill。",
+      "expected_output": "初始阶段只给门店排班问题的 brief，不预设解决方案或评分；Discovery 阶段让候选人主动识别决策者、实际操作人员、流程、例外、基线和验收人；结束阶段才要求采用、交接和复用资产并进行评估。",
+      "assertions": [
+        "初始阶段：不替候选人补齐 Stakeholder Map、非目标或基线",
+        "Discovery 阶段：候选人应主动区分业务 Owner、用户和验证人，并确认非目标和基线",
+        "结束阶段：要求采用、交接与复用资产后，才给最终评估"
+      ]
+    }
+  ]
+}
