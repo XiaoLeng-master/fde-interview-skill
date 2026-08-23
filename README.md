@@ -27,7 +27,7 @@
 ### Clone
 
 ```bash
-git clone <repository-url> fde-interview
+git clone https://github.com/XiaoLeng-master/fde-interview-skill.git fde-interview
 cd fde-interview
 ```
 
