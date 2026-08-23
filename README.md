@@ -1,6 +1,6 @@
 # fde-interview
 
-一个通用的 Forward Deployed Engineer 求职与面试 Codex Skill，面向 FDE、Forward Deployed AI Engineer、FDSE、Applied AI、AI 解决方案工程师、客户工程和技术交付等相邻岗位。
+一个通用的 Forward Deployed Engineer 求职与面试 Skill，面向 FDE、Forward Deployed AI Engineer、FDSE、Applied AI、AI 解决方案工程师、客户工程和技术交付等相邻岗位。
 
 它关注的不是“会不会背 Agent 名词”，而是候选人能否证明：找到真实客户问题、亲手交付生产系统、推动采用和结果，并把现场经验沉淀为可复用能力。
 
@@ -22,7 +22,7 @@
 
 ## 安装
 
-将整个 `fde-interview` 目录复制到 Codex 可发现的 Skills 目录。不同运行环境的个人 Skill 路径可能不同；请以你的 Codex 配置为准，不要只复制 `SKILL.md`，否则题库和验证器会丢失。
+将整个 `fde-interview` 目录安装到支持 Skills 机制的 AI Agent 或开发工具中。不同平台的 Skill 路径和加载方式可能不同，请以对应平台的说明为准。不要只复制 `SKILL.md`，否则题库、参考资料和验证器会丢失。
 
 ## 使用示例
 
@@ -83,4 +83,3 @@ python3 -m json.tool evals/evals.json >/dev/null
 ## License
 
 MIT。引用的第三方资料保留各自版权和许可证；本仓库不重新分发受限制的原文材料。
-
