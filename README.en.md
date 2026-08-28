@@ -1,5 +1,7 @@
 # fde-interview
 
+[![Validate](https://github.com/XiaoLeng-master/fde-interview-skill/actions/workflows/validate.yml/badge.svg)](https://github.com/XiaoLeng-master/fde-interview-skill/actions/workflows/validate.yml) [![Release](https://img.shields.io/github/v/release/XiaoLeng-master/fde-interview-skill)](https://github.com/XiaoLeng-master/fde-interview-skill/releases/latest) [![License: MIT](https://img.shields.io/badge/License-MIT-2563EB.svg)](LICENSE)
+
 [简体中文](README.md) · **v0.1.0**
 
 An evidence-first interview and career-preparation Skill for Forward Deployed
@@ -125,6 +127,10 @@ fde-interview/
 The fixtures are platform-neutral manual checks. They do not prescribe a runner,
 model, or scoring API. The validator checks file structure and JSON shape;
 evaluators must judge responses against each fixture's assertions.
+
+## Roadmap
+
+See the [public roadmap](ROADMAP.md) for v0.1.x, v0.2.0, and future direction. Roadmap items are not shipped capabilities.
 
 ## Contributing
 
