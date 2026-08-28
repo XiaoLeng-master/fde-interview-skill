@@ -1,5 +1,7 @@
 # fde-interview
 
+[![Validate](https://github.com/XiaoLeng-master/fde-interview-skill/actions/workflows/validate.yml/badge.svg)](https://github.com/XiaoLeng-master/fde-interview-skill/actions/workflows/validate.yml) [![Release](https://img.shields.io/github/v/release/XiaoLeng-master/fde-interview-skill)](https://github.com/XiaoLeng-master/fde-interview-skill/releases/latest) [![License: MIT](https://img.shields.io/badge/License-MIT-2563EB.svg)](LICENSE)
+
 [English](README.en.md) · **v0.1.0**
 
 一个通用的 Forward Deployed Engineer 求职与面试 Skill，面向 FDE、Forward Deployed AI Engineer、FDSE、Applied AI、AI 解决方案工程师、客户工程和技术交付等相邻岗位。
@@ -107,6 +109,10 @@ fde-interview/
 ```
 
 评测夹具是平台中立的手工检查，不规定 runner、模型或评分 API。验证器只检查文件结构与 JSON 形状；评估者需要依据每个 fixture 的 assertions 人工判断响应是否通过。
+
+## Roadmap
+
+请查看 [公开 Roadmap](ROADMAP.md)，了解 v0.1.x、v0.2.0 与长期方向。Roadmap 表达方向，不代表已经交付。
 
 ## 贡献
 
