@@ -1,0 +1,33 @@
+name: Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate Skill package
+        run: python3 scripts/validate_skill.py .
+
+      - name: Validate evaluation fixtures
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m json.tool evals/trigger-cases.json >/dev/null
+          python3 -m json.tool evals/quality-cases.json >/dev/null
+          python3 -m json.tool evals/adversarial-cases.json >/dev/null
