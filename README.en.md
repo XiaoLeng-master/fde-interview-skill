@@ -1,5 +1,7 @@
 # fde-interview
 
+![FDE Interview Skill — Evidence-first preparation for Forward Deployed Engineers](docs/assets/fde-interview-skill-social-preview.png)
+
 [![Validate](https://github.com/XiaoLeng-master/fde-interview-skill/actions/workflows/validate.yml/badge.svg)](https://github.com/XiaoLeng-master/fde-interview-skill/actions/workflows/validate.yml) [![Release](https://img.shields.io/github/v/release/XiaoLeng-master/fde-interview-skill)](https://github.com/XiaoLeng-master/fde-interview-skill/releases/latest) [![License: MIT](https://img.shields.io/badge/License-MIT-2563EB.svg)](LICENSE)
 
 [简体中文](README.md) · **v0.1.0**
