@@ -87,6 +87,30 @@
       ]
     },
     {
+      "id": "quality-09",
+      "mode": "role_due_diligence",
+      "scenario_type": "technical",
+      "prompt": "一家硬件公司新开 FDE 岗，要求私有化部署、RAG、ERP 集成和生产代码，JD 写了反哺产品。请判断岗位质量。",
+      "expected_output": "先还原商业与组织位置，再按八维证据和两个硬门槛给暂定分类；区分 JD 自述与已确认事实，并生成代码归属、产品接收和二次复用的核验问题。",
+      "assertions": [
+        "不因技术要求高直接判断为产品型 FDE",
+        "允许早期建设型 FDE 与项目型技术交付的混合判断",
+        "明确产品回流和二次复用是否有证据"
+      ]
+    },
+    {
+      "id": "quality-10",
+      "mode": "role_due_diligence",
+      "scenario_type": "nontechnical",
+      "prompt": "我做实施顾问，看到一个叫 FDE 的岗位，主要驻场培训、配置系统和处理客户工单，但薪资不错。它适合我吗？",
+      "expected_output": "先把岗位暂定为实施售后或相邻交付并说明证据，再区分它能补的客户经验与缺失的工程、生产、采用和复用责任；不给录用概率或武断去留结论。",
+      "assertions": [
+        "不因岗位名称或薪资判断是真 FDE",
+        "先诊断岗位再映射候选人",
+        "给出能够改变分类的具体面试核验问题"
+      ]
+    },
+    {
       "id": "quality-08",
       "mode": "case_drill",
       "scenario_type": "nontechnical",

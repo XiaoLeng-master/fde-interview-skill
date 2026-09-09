@@ -14,10 +14,11 @@ Customer Engineering, and adjacent technical-delivery roles.
 > problem, deliver a production system, drive adoption, and turn field learning
 > into reusable capability.**
 
-## Four core modes
+## Five core modes
 
 | Mode | What you get | Example |
 | --- | --- | --- |
+| 🧭 Target Role Due Diligence | Determine whether a target role operates as product FDE, early-stage FDE, project delivery, staff augmentation, or implementation/support, then generate interview verification questions | “Use this company material and JD to diagnose how the role actually operates” |
 | 🔍 Readiness Diagnosis | Strengths, evidence gaps, and critical risks based on your background, target role, region, level, and timeline | “I am a Java backend engineer moving toward an AI FDE role” |
 | 🗺️ Adaptive Roadmap | A 14-day, 28-day, 6–8 week, or custom plan prioritized by real gaps | “Build me a 28-day transition roadmap” |
 | 🎤 Mock Interview | One question at a time across project depth, Discovery, system design, production, and value | “Interview me for a Senior Forward Deployed AI Engineer role” |
@@ -31,13 +32,15 @@ platform overlays.
 
 ```mermaid
 flowchart LR
-    A[Candidate evidence and target] --> B[Identify verified facts]
+    A[Candidate evidence and target role] --> B[Identify verified facts]
     B --> C[Separate facts inferences and gaps]
     C --> D{Choose a mode}
+    D --> L[Target role due diligence]
     D --> E[Readiness diagnosis]
     D --> F[Adaptive roadmap]
     D --> G[Mock interview]
     D --> H[Case drill]
+    L --> I[Role facts and critical risks]
     E --> I[Score and critical gaps]
     F --> I
     G --> I
@@ -96,6 +99,12 @@ evidence from gaps, and asks at most one question that materially changes the
 assessment.
 
 ## Example prompts
+
+```text
+Use this job description, product material, and current public evidence to
+determine whether the role is product FDE, early-stage FDE, project delivery,
+or staff augmentation. Give me interview questions that verify the gaps.
+```
 
 ```text
 Use this job description and sanitized resume to produce China-focused and

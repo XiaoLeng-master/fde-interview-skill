@@ -88,7 +88,7 @@
       "prompt": "解释一下 RAG 和 Agent 的区别。",
       "expected_trigger": "clarify",
       "assertions": [
-        "不把普通技术解释误路由为四种 FDE 服务模式",
+        "不把普通技术解释误路由为 FDE 求职服务模式",
         "简短确认用户是否希望将问题放入 FDE 准备或案例语境"
       ]
     },
@@ -140,6 +140,26 @@
       "assertions": [
         "只追问一个会改变面试设计的关键问题，例如目标岗位或轨道",
         "不假定项目已生产上线或由候选人主导"
+      ]
+    },
+    {
+      "id": "trigger-16",
+      "category": "positive",
+      "prompt": "结合这份公司资料和 JD，判断这个岗位是真 FDE、项目交付还是高级外包。",
+      "expected_trigger": "role_due_diligence",
+      "assertions": [
+        "进入目标岗位尽调而不是直接给候选人评分",
+        "检查产品回流和二次复用而不是只看岗位名称"
+      ]
+    },
+    {
+      "id": "trigger-17",
+      "category": "boundary",
+      "prompt": "这家公司有自己的 AI 产品，JD 也写了反哺产品，这份 FDE 工作值得我继续面试吗？",
+      "expected_trigger": "role_due_diligence",
+      "assertions": [
+        "先诊断岗位事实和证据缺口，再条件式说明候选人风险",
+        "不把公司有产品或 JD 愿景当成复利已经成立"
       ]
     },
     {

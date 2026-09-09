@@ -15,13 +15,14 @@ REQUIRED_FILES = [
     "references/role-model.md", "references/dual-track-rubric.md",
     "references/learning-roadmap.md", "references/resume-evidence-audit.md",
     "references/project-deep-dive.md", "references/discovery-and-scoping.md",
+    "references/target-role-due-diligence.md",
     "references/delivery-and-production.md", "references/value-adoption-reuse.md",
     "references/agent-engineering.md", "references/domestic-case-bank.md",
     "references/global-case-bank.md", "references/behavioral-story-bank.md",
     "references/source-map.md",
 ]
 REQUIRED_CONCEPTS = [
-    "准备度诊断", "简历诊断", "模拟面试", "Case Drill", "一次只问一个问题", "不虚构",
+    "准备度诊断", "目标岗位尽调", "简历诊断", "模拟面试", "Case Drill", "一次只问一个问题", "不虚构",
     "references/dual-track-rubric.md", "references/domestic-case-bank.md",
     "references/global-case-bank.md",
 ]
@@ -37,11 +38,11 @@ MOCK_STATE_FIELDS = [
     "evidence_observed", "risks_observed", "remaining_rounds", "stop_condition",
 ]
 VALID_EXPECTED_TRIGGERS = {
-    "readiness_diagnosis", "resume_audit", "mock_interview", "case_drill", "clarify",
+    "role_due_diligence", "readiness_diagnosis", "resume_audit", "mock_interview", "case_drill", "clarify",
 }
 VALID_TRIGGER_CATEGORIES = {"positive", "negative", "boundary"}
 VALID_QUALITY_MODES = {
-    "readiness_diagnosis", "resume_audit", "mock_interview", "case_drill",
+    "role_due_diligence", "readiness_diagnosis", "resume_audit", "mock_interview", "case_drill",
 }
 VALID_SCENARIO_TYPES = {"technical", "nontechnical"}
 VALID_ADVERSARIAL_RISKS = {
